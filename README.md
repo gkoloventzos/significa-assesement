@@ -42,16 +42,16 @@ This command will rollout any changes on minikube.
 For monitoring, in my work, I have used Grafana and Prometheus with great results.
 I will use the same with Loki to get some of the app messages.
 I will check the 
-- errors (4xx/5xx) for failures
-- request latency for slow responses
-- request throughput for traffic
-- CPU usage
-- memory usage
-- disk usage
-- pod health
-- replica availability
-- node status
-
-These stats will give an overview of the cluster and application behaviour.
+- $${\color{red}errors \space (4xx/5xx) \space for \space failures}$$
+- $${\color{red}request \space latency \space for \space slow \space responses}$$
+- $${\color{red}request \space throughput \space for \space traffic}$$
+- $${\color{lightgreen}CPU \space usage}$$
+- $${\color{lightgreen}memory  \space usage}$$
+- $${\color{lightgreen}disk \space usage}$$
+- $${\color{blue}pod \space health}$$
+- $${\color{blue}replica \space availability}$$
+- $${\color{blue}node \space status}$$
+  
+These stats provide an overview of $${\color{red}application}$$, $${\color{lightgreen}cluster}$$, and $${\color{blue}node}$$ behaviour.
 Grafana + AlertManager can send messages directly to a Slack channel for quick and easy acknowledgment of issues.
 
